@@ -450,7 +450,7 @@ class Window(QtWidgets.QWidget):
     def set_blend(self, name):
         self.comp.blend = name
         for op in self.op_labels:
-            op.setText(name)
+            op.setText("\u00d7")
             op.setToolTip(f"blend mode: {name}")
 
     # --- midi
@@ -517,7 +517,7 @@ def apply_style(app):
     app.setStyleSheet("""
         QWidget { background: #2b2b33; color: #ddd; font-size: 13px; }
         QFrame#card { background: #33333d; border-radius: 8px; }
-        QLabel#op { font-size: 15px; font-weight: bold; color: #aaa; background: transparent; }
+        QLabel#op { font-size: 24px; font-weight: bold; color: #aaa; background: transparent; }
         QLabel { background: transparent; }
         QPushButton { border: 1px solid #666; border-radius: 4px; }
         QComboBox { background: #444450; padding: 3px; }
