@@ -21,8 +21,8 @@ The result is sent via UDP (20*20*20*3 bytes) 30 times a second.
 ## Run
 
 ```
-python -m venv .venv && . .venv/bin/activate
-pip install -r requirements.txt
+python -m venv .venv && . .venv/bin/activate    # on Debian/Ubuntu: apt install python3-venv, or use `uv venv`
+pip install -r requirements.txt                   # or: uv pip install -r requirements.txt
 python frequency_composition.py [--host 127.0.0.1] [--port 5005] [--midi nanokontrol]
 ```
 
